@@ -343,9 +343,10 @@ body.cx-lock{overflow:hidden}
   .aftercare .s-title{font-size:20px;line-height:30px;padding:0 24px 28px;text-wrap:balance}
   .bento-cell,.bento-cell.span2{height:400px}
   /* 40px gutters inside a 375px card left the copy nowhere to go */
-  .bento-body{left:24px;right:24px;bottom:28px}
+  /* whole card stack is centred on a phone, to match the full-width centred CTA */
+  .bento-body{left:24px;right:24px;bottom:28px;text-align:center}
   .bento-body h3{font-size:21px;line-height:30px;margin:0 0 10px;text-wrap:balance}
-  .bento-body p{font-size:15px;line-height:21px;margin:0 0 16px}
+  .bento-body p{font-size:15px;line-height:21px;margin:0 auto 16px}
   /* the longest labels ("Explore service & maintenance") can't hold one line at any
      readable size on a phone, so the CTA becomes a full-width centred button and the
      chevron rides along with the last word instead of being flung to the card edge
@@ -384,7 +385,7 @@ body.cx-lock{overflow:hidden}
 <style>/* MOBILE-HELP-ONELINE: help/expert title one line + full-width CTA (site-wide) */
 @media (max-width:680px){
   .help h2,.expert h2{white-space:nowrap;font-size:clamp(16px,5.8vw,28px);line-height:1.25}
-  .help .btn-ghost,.help .btn,.expert .btn,.expert .btn-ghost{width:100%}
+  .help .btn-ghost,.help .btn,.expert .btn,.expert .btn-ghost{width:100%;justify-content:center;text-align:center}
 }</style>
 </head>
 <body>
@@ -428,7 +429,7 @@ body.cx-lock{overflow:hidden}
       <div class="bento-body">
         <h3>Yacht management</h3>
         <p>End-to-end support for operations, crew, service, and ownership logistics, handled with expert oversight.</p>
-        <button class="bento-cta">Explore yacht management <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button class="bento-cta">Yacht management <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
       </div>
     </div>
     <div class="bento-cell reveal d2" data-parallax-bg="0.20">
@@ -439,7 +440,7 @@ body.cx-lock{overflow:hidden}
       <div class="bento-body">
         <h3>Service &amp; maintenance</h3>
         <p>Yacht service, maintenance coordination, and technical support to keep your vessel ready for the water.</p>
-        <button class="bento-cta">Explore service &amp; maintenance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button class="bento-cta">Service &amp; maintenance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
       </div>
     </div>
     <div class="bento-cell reveal d1" data-parallax-bg="0.20">
@@ -450,7 +451,7 @@ body.cx-lock{overflow:hidden}
       <div class="bento-body">
         <h3>Sell your yacht</h3>
         <p>Pricing, marketing, and expert brokerage to connect your yacht with the right qualified buyers.</p>
-        <button class="bento-cta">Explore selling services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button class="bento-cta">Selling services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
       </div>
     </div>
     <div class="bento-cell reveal span2" data-parallax-bg="0.20">
@@ -461,7 +462,7 @@ body.cx-lock{overflow:hidden}
       <div class="bento-body">
         <h3>Co-ownership</h3>
         <p>Access to premium boating, with less complexity and ownership responsibility.</p>
-        <button class="bento-cta">Explore Mari-Time <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button class="bento-cta">Mari-Time <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
       </div>
     </div>
     <div class="bento-cell reveal d1" data-parallax-bg="0.20">
