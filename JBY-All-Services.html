@@ -69,7 +69,7 @@ a{color:inherit;text-decoration:none}
 .btn-ghost:hover{background:rgba(255,255,255,0.14)}
 
 /* ============================== HERO ============================== */
-.hero{position:relative;width:100%;height:800px;max-height:100vh;overflow:hidden;background:#0a1620;color:#fff}
+.hero{position:relative;width:100%;height:100vh;height:100svh;min-height:620px;overflow:hidden;background:#0a1620;color:#fff}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
 .hero-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.42) 0%,rgba(0,0,0,0.12) 18%,rgba(0,0,0,0) 42%,rgba(0,0,0,0.28) 68%,rgba(0,0,0,0.72) 100%)}
 .hero-text{position:absolute;left:64px;right:64px;bottom:64px;z-index:5;max-width:1312px}
@@ -84,7 +84,6 @@ a{color:inherit;text-decoration:none}
 .hero-text p{animation:heroUp .9s var(--ease) .34s both}
 .hero-text .hero-cta{animation:heroUp .9s var(--ease) .52s both}
 @media (max-width:980px){
-  .hero{height:640px}
   .hero-text{left:24px;right:24px;bottom:48px}
   .hero-text h1{font-size:26px;line-height:36px}
   .hero-text p{font-size:17px;line-height:26px}
@@ -327,8 +326,9 @@ body.cx-lock{overflow:hidden}
   :root{--section-pad:72px}
 
   /* ---------- HERO ---------- */
-  /* 100svh guard: Safari's bottom toolbar must never crop the hero */
-  .hero{max-height:100svh}
+  /* Hero: svh controls height; drop the 620px floor so the CTA stays visible
+     (same rule as the Home page) */
+  .hero{min-height:0}
   /* at 22px each sentence wrapped and orphaned "MANAGED." / "YOURS." onto a line
      of their own; this scales the title down just enough to hold one sentence per
      line at every phone width (still wraps, rather than overflowing, if it can't) */
